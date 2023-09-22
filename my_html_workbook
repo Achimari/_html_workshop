@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
 
+  .button-container {
+    text-align: center;
+  }
+
+  .form-button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="button-container">
+    <form action="/action_page.php" method="get">
+      <button class="form-button" type="submit">GET</button>
+    </form>
+
+    <form action="/action_page.php" method="post">
+      <button class="form-button" type="submit">POST</button>
+    </form>
+  </div>
+</body>
+</html>
